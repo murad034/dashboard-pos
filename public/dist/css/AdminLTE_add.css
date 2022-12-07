@@ -1,0 +1,40 @@
+.profile-btn {
+    background: #000;
+    padding: 10px;
+    color: #fff;
+}
+.profile-btn:hover {
+    background: #d52dfd;
+    padding: 10px;
+    color: #fff;
+}
+.profile-btn-snd {
+    background: gray;
+    padding: 10px;
+    color: #fff;
+}
+.profile-btn-snd:hover {
+    background: #d52dfd;
+    padding: 10px;
+    color: #fff;
+}
+.profile-btn-del {
+    background: red;
+    padding: 10px;
+    color: #fff;
+}
+.profile-btn-del:hover {
+    background: #d52dfd;
+    padding: 10px;
+    color: #fff;
+}
+.profile-btn-reactivate {
+    background: green;
+    padding: 10px;
+    color: #fff;
+}
+.profile-btn-reactivate:hover {
+    background: #d52dfd;
+    padding: 10px;
+    color: #fff;
+}

@@ -1,0 +1,120 @@
+.error {
+    color: #ff0000; font-size: 14px;
+}
+.eye-visiable {
+    position: absolute;
+    top: 46px;
+    right: 10px;
+}
+#passerror {display: none;}
+meter {
+    /* Reset the default appearance */
+    /*-webkit-appearance: none;  appearance: none; */
+       -moz-appearance: none;
+           
+            
+    margin: 0 auto 1em;
+    width: 100%;
+    height: 10px;
+    
+    /* Applicable only to Firefox */
+    background: none;
+    background-color: rgba(0,0,0,0.1);
+}
+
+meter::-webkit-meter-bar {
+    background: none;
+    background-color: rgba(0,0,0,0.1);
+}
+
+meter[value="1"]::-webkit-meter-optimum-value { background: red; }
+meter[value="2"]::-webkit-meter-optimum-value { background: yellow; }
+meter[value="3"]::-webkit-meter-optimum-value { background: orange; }
+meter[value="4"]::-webkit-meter-optimum-value { background: green; }
+
+meter[value="1"]::-moz-meter-bar { background: red; }
+meter[value="2"]::-moz-meter-bar { background: yellow; }
+meter[value="3"]::-moz-meter-bar { background: orange; }
+meter[value="4"]::-moz-meter-bar { background: green; }
+
+.feedback {
+    color: #9ab;
+    font-size: 90%;
+    padding: 0 .25em;
+    font-family: Courgette, cursive;
+    margin-top: 1em;
+}
+
+.main .left .box .boxtop .profile_name h2 span, .main .left .box .boxtop .profile_name h2 span a {
+    font-size: 25px;
+    font-weight: 600;
+    color: #0053CF;
+}
+
+.main .left .box .boxtop .profile_name h2 a{
+	font-size: 25px;
+	font-weight: 600;
+	color: #24292d;
+	line-height: 31px;
+}
+.main .left .box .boxtop .profile_name h2 a:hover{
+    color: #5A9AF9;
+}
+
+.main .right-inner .box .boxtop .profile_name h2 a{
+    color: #24292d;
+}
+
+.main .right-inner .box .boxtop .profile_name h2 a:hover{
+    color: #5A9AF9;
+}
+
+.blur-me {
+    filter: blur(5px) brightness(50%);
+}
+
+.suggested-div .profile_name a{
+	color: #000;
+}
+.suggested-div .profile_name a:hover{
+	color: #5A9AF9;
+}
+.left .box .boxtop .profile_name h2 span a:hover{
+    color: #5A9AF9;
+}
+.box_small .boxtop .profile_name h2 a{ color: #000; }
+.box_small .boxtop .profile_name h2 span a{ color: #0053CF;; }
+
+.cart_right .itemdiv {
+    padding: 20px 0px 0 0;
+    margin: 0px;
+}
+.nav-tabs {
+    border-bottom: 0px solid #333;
+    max-width: 800px !important;
+    width: 100%;
+    margin: 55px auto;
+	display:block;
+	text-align: center;
+}
+.nav-link{
+	display:inline-block;
+	float:none;
+}
+.dropdown-item{
+	/*white-space: normal !important;*/
+}
+.hash p{
+	white-space: nowrap !important;
+}
+.top-right {
+    text-align: right;
+    white-space: nowrap !important;
+}
+.main .left .box .box_hoverflow {
+    background: rgba(0,0,0,.3);
+}
+
+@media(max-width:991px){ 
+.smalltext {font-size:20px !important;}
+}

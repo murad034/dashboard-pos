@@ -1,0 +1,41 @@
+.dest {
+    background: #888;
+    position: relative;
+    height: 100%;
+    min-height: 768px;
+}
+
+.exp {
+    background: rgb(56, 148, 235);
+    min-width: 9%;
+    min-height: 9%;
+    border: 0px;
+    border-radius: 3px;
+    position: absolute;
+    margin: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    box-shadow: rgb(0 0 0 / 50%) 0px 1px 3px 0px, rgb(0 0 0 / 60%) 0px 1px 2px 0px;
+}
+
+.exp:active {
+    opacity: 1;
+    box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
+    inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.exp span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 0.7em;
+}
+
+.selected {
+    /* border: 2px solid rgb(0, 81, 255); */
+    opacity: 0.5;
+}

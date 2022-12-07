@@ -1,0 +1,556 @@
+.left-content-section {
+    flex: 0.32;
+    background: #e6e6e6;
+    padding: 20px;
+}
+
+.search-box {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    height: 35px;
+    box-sizing: border-box;
+    border: 1px solid rgb(58, 207, 252);
+    border-radius: 4px;
+    font-size: 12px;
+    background-color: white;
+    background-image: url("https://www.w3schools.com/howto/searchicon.png");
+    background-position: 225px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 30px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    background-size: 12px;
+}
+
+.layout-section {
+    margin-bottom: 20px;
+}
+
+.layout-title {
+    border-bottom: 1px solid rgb(165, 165, 165);
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    flex: 1;
+}
+
+.layout-title > p {
+    color: rgb(107, 107, 107);
+    font-weight: bold;
+}
+
+.layout-menu {
+    width: 100%;
+    max-height: 80px;
+    overflow-y: auto;
+    border: 1px solid #c2c2c2;
+    position: relative;
+    background-color: rgb(241, 241, 241);
+}
+
+.layout-menu-blink {
+    animation: blinking 2s infinite;
+}
+
+@keyframes blinking {
+    0% {
+        box-shadow: 0 0 0 0 rgba(52, 172, 224, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(0, 174, 255, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+.layout-menu a {
+    color: rgb(107, 107, 107);
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    border-bottom: 1px solid #c2c2c2;
+}
+
+.layout-menu a:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.layout-menu a.active {
+    background-color: rgb(58, 126, 252);
+    color: white;
+    cursor: pointer;
+}
+
+*::-webkit-scrollbar {
+    width: 5px; /* width of the entire scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+    background: rgba(187, 187, 187, 0); /* color of the tracking area */
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(66, 154, 212); /* color of the scroll thumb */
+    border-radius: 5px; /* roundness of the scroll thumb */
+    border: 2px solid rgba(255, 166, 0, 0);
+}
+
+.product-section {
+    margin-bottom: 20px;
+}
+
+.product-title {
+    border-bottom: 1px solid rgb(165, 165, 165);
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.product-tab,
+.function-tab {
+    background-color: rgb(227 227 227);
+    border-radius: 0;
+    color: #5e5e5e;
+    font-weight: bold;
+    transition: none;
+}
+
+.product-tab:hover,
+.function-tab:hover {
+    background-color: #dfdfdf;
+    color: #989898;
+}
+
+.active-tab {
+    border-style: solid;
+    border-width: 1px 1px 0 1px;
+    background: #1e88e5;
+    color: white;
+}
+
+.active-tab:hover {
+    background: #0486d6;
+    color: white;
+}
+
+.product-dummy-text,
+.function-dummy-text {
+    width: 150px;
+    text-align: center;
+    color: #6b6c6d;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.product-menu,
+.function-menu {
+    position: relative;
+    width: 100%;
+    max-height: 180px;
+    min-height: 180px;
+    overflow-y: auto;
+    border: 1px solid #c2c2c2;
+    background-color: rgb(241, 241, 241);
+}
+
+.product-menu a,
+.function-menu a {
+    color: rgb(107, 107, 107);
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    border-bottom: 1px solid #c2c2c2;
+}
+
+.product-menu a:hover,
+.function-menu a:hover {
+    background-color: #ccc;
+    cursor: move;
+}
+
+.prod-func-wrap {
+    display: flex;
+}
+
+.custom-section {
+    margin-bottom: 20px;
+}
+
+.custom-title {
+    border-bottom: 1px solid rgb(165, 165, 165);
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    flex: 1.5;
+}
+
+.custom-title > p {
+    color: rgb(107, 107, 107);
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.custom-menu {
+    padding: 8px;
+    width: 100%;
+    /* height: 300px; */
+    max-height: 260px;
+    overflow-y: auto;
+    border: 1px solid #c2c2c2;
+    background-color: rgb(241, 241, 241);
+}
+
+.custom-menu a {
+    color: rgb(107, 107, 107);
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    border-bottom: 1px solid #c2c2c2;
+}
+
+.custom-menu a:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.input-color {
+    position: absolute;
+    visibility: hidden;
+}
+
+select {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 99%;
+    padding: 0px;
+    font-size: 10px;
+    padding: 5px;
+    color: #5e5e5e;
+    border: 1px solid rgb(58, 126, 252);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjI1NXB4IiBoZWlnaHQ9IjI1NXB4IiB2aWV3Qm94PSIwIDAgMjU1IDI1NSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjU1IDI1NTsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGcgaWQ9ImFycm93LWRyb3AtZG93biI+DQoJCTxwb2x5Z29uIHBvaW50cz0iMCw2My43NSAxMjcuNSwxOTEuMjUgMjU1LDYzLjc1IAkJIi8+DQoJPC9nPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=) 96% / 8% no-repeat #eee;
+}
+
+.font-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.font-slider input[type="range"] {
+    /* display: inline; */
+    width: 100%;
+    height: 5px;
+}
+
+.font-label {
+    color: rgb(87, 87, 86);
+    margin-bottom: 5px;
+    font-size: 11px;
+}
+
+.color-seg,
+.btn-size,
+.btn-copy-group,
+.font-section,
+.btn-del-paste-group {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 13px;
+}
+
+.btn-del-paste-group {
+    margin-bottom: 0px;
+}
+
+.btn-bg-color,
+.font-color,
+.font-selector,
+.upDwn,
+.riteLeft,
+.btn-clone,
+.btn-copy-style,
+.btn-remove,
+.btn-paste-style {
+    width: 46%;
+    display: flex;
+}
+
+.font-setter {
+    width: 100%;
+    display: flex;
+}
+
+.font-setter {
+    flex-direction: column;
+}
+
+.menu-selected {
+    background-color: rgb(58, 126, 252);
+    color: #eee !important;
+}
+
+.menu-selected:hover {
+    background-color: rgb(58, 126, 252) !important;
+    color: #eee !important;
+}
+
+.multi-clone-menu-selected,
+.sublink-selected {
+    background-color: rgb(111, 84, 133);
+    color: #eee !important;
+}
+
+.multi-clone-menu-selected:hover,
+.sublink-selected:hover {
+    background-color: rgb(142, 121, 157) !important;
+    color: #eee !important;
+}
+
+.custom-head {
+    display: flex;
+}
+
+.layout-head {
+    display: flex;
+}
+
+.custom-action-icon {
+    display: flex;
+    padding-top: 7px;
+    justify-content: space-between;
+    width: 120px;
+    margin-left: 10px;
+}
+
+.layout-action-btns {
+    position: relative;
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-between;
+    width: 100px;
+    margin-left: 15px;
+}
+
+.undo-changes,
+.save-changes,
+.clone-layout,
+.clone-to-multiple,
+.add-layout,
+.select-all-btn,
+.de-select-all-btn,
+.delete-layout,
+.sub-link-btn {
+    position: relative;
+    cursor: pointer;
+}
+
+.fa-object-group,
+.fa-object-ungroup,
+.fa-eraser,
+.fa-save,
+.fa-clone,
+.fa-plus,
+.fa-trash-alt,
+.fa-layer-group,
+.fa-link {
+    color: rgb(107, 107, 107);
+}
+
+.fa-link:hover {
+    color: #8d22f2;
+}
+
+.fa-object-group:hover {
+    color: #f25922;
+}
+
+.fa-object-ungroup:hover {
+    color: #f28729;
+}
+
+.fa-eraser:hover {
+    color: #d94343;
+}
+
+.fa-save:hover {
+    color: #1d6a73;
+}
+
+.fa-clone:hover {
+    color: #f28729;
+}
+
+.fa-plus:hover {
+    color: #00a0ebb3;
+}
+
+.fa-trash-alt:hover {
+    color: #d94343;
+}
+
+.fa-layer-group:hover {
+    color: #914bc6;
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 80px;
+    font-size: 10px;
+    background-color: rgb(10, 10, 10);
+    color: rgb(252, 252, 252);
+    text-align: center;
+    border-radius: 3px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 130%;
+    left: 50%;
+    margin-left: -40px;
+}
+
+.tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(10, 10, 10) transparent transparent transparent;
+}
+
+.sub-link-btn:hover .tooltip,
+.select-all-btn:hover .tooltip,
+.de-select-all-btn:hover .tooltip,
+.undo-changes:hover .tooltip,
+.save-changes:hover .tooltip,
+.add-layout:hover .tooltip,
+.delete-layout:hover .tooltip,
+.clone-layout:hover .tooltip,
+.clone-to-multiple:hover .tooltip {
+    visibility: visible;
+}
+
+.toast-icon {
+    color: white !important;
+}
+
+.toast-icon:before {
+    content: "\f00c";
+    color: #ffffff;
+}
+
+#btn-size {
+    color: rgb(255, 255, 255);
+    margin-left: 5px;
+}
+
+.upDwn button {
+    background-color: #4caf50; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+    width: 100%;
+    margin: 0px;
+    border-radius: 0px;
+}
+
+/* Clear floats (clearfix hack) */
+.upDwn:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.upDwn button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.upDwn button:hover {
+    background-color: #3e8e41;
+}
+
+.riteLeft button {
+    background-color: #4caf50; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+    width: 100%;
+    margin: 0px;
+    border-radius: 0px;
+}
+
+/* Clear floats (clearfix hack) */
+.riteLeft:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.riteLeft button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.riteLeft button:hover {
+    background-color: #3e8e41;
+}
+
+button {
+    width: 100%;
+    background: #0798f2;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    border-color: rgba(102, 51, 153, 0);
+    padding: 7px 7px;
+    font-size: 11px;
+    color: #f7f7f7;
+}
+
+button:hover {
+    background: #076faf;
+}
+
+.btn-del {
+    background: #f23d3d;
+}
+
+.btn-del:hover {
+    background: #9e1919;
+}
+
+.btn-copy {
+    background-color: #914bc6;
+}
+
+.btn-copy:hover {
+    background-color: #7134a0;
+}
+
+.fa-grip-vertical {
+    background-color: red;
+}
+
+.can-disbl-btns {
+    display: flex;
+    justify-content: space-between;
+    width: 73px;
+}
+
+.disable-div {
+    pointer-events: none;
+    opacity: 0.6;
+}
